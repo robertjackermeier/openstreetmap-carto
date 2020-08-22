@@ -1,6 +1,6 @@
 @water-text: #4d80b3;
-@glacier: #ddecec;
-@glacier-line: #9cf;
+@glacier: #b0bebe;
+@glacier-line: rgb(120, 162, 204);
 
 @waterway-text-repeat-distance: 200;
 
@@ -43,7 +43,7 @@
       [int_intermittent != 'yes'][zoom >= 14],
       [zoom >= 15] {
         line-width: 2.5;
-        line-color: white;
+        line-color: rgb(95, 133, 189);
         [waterway = 'stream'][zoom >= 15] {
           line-width: 3.5;
         }

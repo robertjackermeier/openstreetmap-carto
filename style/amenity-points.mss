@@ -1,26 +1,26 @@
 @marina-text: #576ddf; // also swimming_pool
 @wetland-text: darken(#4aa5fa, 25%); /* Also for mud */
-@shop-icon: #ac39ac;
-@shop-text: #939;
-@transportation-icon: #0092da;
-@transportation-text: #0066ff;
+@shop-icon: #8d258d;
+@shop-text: rgb(104, 21, 104);
+@transportation-icon: #255c77;
+@transportation-text: #2d4f83;
 @accommodation-icon: @transportation-icon;
 @accommodation-text: @transportation-text;
 @airtransport: #8461C4; //also ferry_terminal
-@health-color: #BF0000;
-@amenity-brown: #734a08;
-@gastronomy-icon: #C77400;
+@health-color: #610303;
+@amenity-brown: #583905;
+@gastronomy-icon: #9c5b00;
 @gastronomy-text: darken(@gastronomy-icon, 5%);
 @memorials: @amenity-brown;
 @culture: @amenity-brown;
 @public-service: @amenity-brown;
-@office: #4863A0;
+@office: #3b5286;
 @man-made-icon: #666666;
 @advertising-grey: @man-made-icon;
 @barrier-icon: #3f3f3f;
 @landform-color: #d08f55;
 @leisure-green: darken(@park, 60%);
-@protected-area: #008000;
+@protected-area: #005f00;
 @aboriginal: #82643a;
 @religious-icon: #000000;
 

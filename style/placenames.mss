@@ -1,5 +1,5 @@
-@placenames: #222;
-@placenames-light: #777777;
+@placenames: rgb(221, 219, 219);
+@placenames-light: #e9e7e7;
 @country-labels: darken(@admin-boundaries-narrow, 10%);
 @state-labels: desaturate(@admin-boundaries-narrow, 5%);
 @county-labels: darken(@admin-boundaries-wide, 5%);
