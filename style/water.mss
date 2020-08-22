@@ -1,4 +1,4 @@
-@water-text: #4d80b3;
+@water-text: #051424;
 @glacier: #b0bebe;
 @glacier-line: rgb(120, 162, 204);
 
@@ -43,7 +43,7 @@
       [int_intermittent != 'yes'][zoom >= 14],
       [zoom >= 15] {
         line-width: 2.5;
-        line-color: rgb(95, 133, 189);
+        line-color: rgb(33, 49, 75);
         [waterway = 'stream'][zoom >= 15] {
           line-width: 3.5;
         }
@@ -103,7 +103,7 @@
 
     [int_intermittent = 'yes'] {
       [bridge = 'yes'][zoom >= 14] {
-        bridgefill/line-color: white;
+        bridgefill/line-color: gray;
         bridgefill/line-join: round;
         bridgefill/line-width: 4;
         [zoom >= 15] { bridgefill/line-width: 5; }
@@ -161,7 +161,7 @@
         bridgecasing/line-join: round;
         bridgecasing/line-width: 4;
         [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4; }
-        bridgeglow/line-color: white;
+        bridgeglow/line-color: grey;
         bridgeglow/line-join: round;
         bridgeglow/line-width: 3;
         [waterway = 'stream'][zoom >= 15] { bridgeglow/line-width: 3; }

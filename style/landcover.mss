@@ -1,60 +1,60 @@
 // --- Parks, woods, other green things ---
 
-@grass: #4a5e39;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
-@scrub: #59663c;        // Lch(84,24,122)
-@forest: #38522e;       // Lch(80,30,135)
-@forest-text: #46673b;  // Lch(40,30,135)
-@park: #265833;         // Lch(94,30,145)
-@allotments: #3e5037;   // Lch(87,20,135)
-@orchard: #5e8354; // also vineyard, plant_nursery
+@grass: #131b0c;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
+@scrub: #1c2509;        // Lch(84,24,122)
+@forest: #0b1806;       // Lch(80,30,135)
+@forest-text: #193012;  // Lch(40,30,135)
+@park: #010f05;         // Lch(94,30,145)
+@allotments: #172013;   // Lch(87,20,135)
+@orchard: #0d1609; // also vineyard, plant_nursery
 @hedge: @forest;       // Lch(80,30,135)
 
 // --- "Base" landuses ---
 
-@built-up-lowzoom: #888888;
-@built-up-z12: #9b9b9b;
-@residential: #333333;      // Lch(89,0,0)
-@residential-line: #a7a5a5; // Lch(75,0,0)
-@retail: #694343;           // Lch(89,16,30)
-@retail-line: #794b46;      // Lch(70,25,30)
-@commercial: #5c403f;       // Lch(89,8.5,25)
-@commercial-line: #9b7271;  // Lch(75,12,25)
-@industrial: #462c41;       // Lch(89,9,330) (Also used for railway, wastewater_plant)
-@industrial-line: #63485e;  // Lch(75,11,330) (Also used for railway-line, wastewater_plant-line)
-@farmland: #323508;         // Lch(94,14,112)
-@farmland-line: #71753c;    // Lch(80,14,112)
-@farmyard: #634b2b;         // Lch(89,20,80)
-@farmyard-line: #947852;    // Lch(75,25,80)
+@built-up-lowzoom: #222222;
+@built-up-z12: #272727;
+@residential: #141414;      // Lch(89,0,0)
+@residential-line: #292929; // Lch(75,0,0)
+@retail: #1d0b0b;           // Lch(89,16,30)
+@retail-line: #2b1310;      // Lch(70,25,30)
+@commercial: #221914;       // Lch(89,8.5,25)
+@commercial-line: #2c1b1a;  // Lch(75,12,25)
+@industrial: #0c050b;       // Lch(89,9,330) (Also used for railway, wastewater_plant)
+@industrial-line: #0e070c;  // Lch(75,11,330) (Also used for railway-line, wastewater_plant-line)
+@farmland: #131404;         // Lch(94,14,112)
+@farmland-line: #232414;    // Lch(80,14,112)
+@farmyard: #1b1308;         // Lch(89,20,80)
+@farmyard-line: #3a2e1d;    // Lch(75,25,80)
 
 // --- Transport ----
 
-@transportation-area: #6b6a65;
-@apron: #909096;
-@garages: #7a796f;
-@parking: #686868;
+@transportation-area: #252523;
+@apron: #3e3e42;
+@garages: #1d1d1a;
+@parking: #242424;
 @parking-outline: saturate(darken(@parking, 40%), 20%);
 @railway: @industrial;
 @railway-line: @industrial-line;
-@rest_area: #462424; // also services
+@rest_area: #1b0909; // also services
 
 // --- Other ----
 
-@bare_ground: #534f4a;
-@campsite: #617548; // also caravan_site, picnic_site
-@cemetery: #263b29; // also grave_yard
-@construction: #535336; // also brownfield
-@heath: #727134;
+@bare_ground: #1d1b1a;
+@campsite: #192010; // also caravan_site, picnic_site
+@cemetery: #0b130c; // also grave_yard
+@construction: #1f1f0b; // also brownfield
+@heath: #2e2d0f;
 @mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
-@place_of_worship: #8b8983; // also landuse_religious
+@place_of_worship: #353330; // also landuse_religious
 @place_of_worship_outline: darken(@place_of_worship, 30%);
 @leisure: lighten(@park, 5%);
 @power: darken(@industrial, 5%);
 @power-line: darken(@industrial-line, 5%);
-@sand: #d6c89d;
-@societal_amenities: #575327;   // Lch(99,13,109)
+@sand: #574c2c;
+@societal_amenities: #181606;   // Lch(99,13,109)
 @tourism: #660033;
-@quarry: #585858;
-@military: rgb(150, 48, 48);
+@quarry: #242323;
+@military: rgb(70, 20, 20);
 @beach: #c7b261;
 @wastewater_plant: @industrial;
 @wastewater_plant-line: @industrial-line;
@@ -63,10 +63,10 @@
 
 // --- Sports ---
 
-@pitch: #4e6e62;           // Lch(85,22,168) also track
+@pitch: #1e2723;           // Lch(85,22,168) also track
 @track: @pitch;
 @stadium: @leisure; // also sports_centre
-@golf_course: #3a4b3a;
+@golf_course: #121812;
 
 #landcover-low-zoom[zoom < 10],
 #landcover[zoom >= 10] {
@@ -471,7 +471,7 @@
 
   [feature = 'landuse_landfill'] {
     [zoom >= 10] {
-      polygon-fill: #807e55;
+      polygon-fill: #272616;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -931,7 +931,7 @@
     text-name: "[name]";
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
-    text-fill: #999;
+    text-fill: rgb(70, 70, 70);
     text-size: 10;
     text-face-name: @book-fonts;
     text-placement: line;
