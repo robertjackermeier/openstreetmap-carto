@@ -15,8 +15,8 @@
 @built-up-z12: #9b9b9b;
 @residential: #333333;      // Lch(89,0,0)
 @residential-line: #a7a5a5; // Lch(75,0,0)
-@retail: #744f4f;           // Lch(89,16,30)
-@retail-line: #97635d;      // Lch(70,25,30)
+@retail: #694343;           // Lch(89,16,30)
+@retail-line: #794b46;      // Lch(70,25,30)
 @commercial: #5c403f;       // Lch(89,8.5,25)
 @commercial-line: #9b7271;  // Lch(75,12,25)
 @industrial: #462c41;       // Lch(89,9,330) (Also used for railway, wastewater_plant)
@@ -42,7 +42,7 @@
 @bare_ground: #534f4a;
 @campsite: #617548; // also caravan_site, picnic_site
 @cemetery: #263b29; // also grave_yard
-@construction: #636344; // also brownfield
+@construction: #535336; // also brownfield
 @heath: #727134;
 @mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
 @place_of_worship: #8b8983; // also landuse_religious
