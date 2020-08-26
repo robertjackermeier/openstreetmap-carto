@@ -45,7 +45,7 @@
 @construction: #1f1f0b; // also brownfield
 @heath: #2e2d0f;
 @mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
-@place_of_worship: #353330; // also landuse_religious
+@place_of_worship: #363635; // also landuse_religious
 @place_of_worship_outline: darken(@place_of_worship, 30%);
 @leisure: lighten(@park, 5%);
 @power: darken(@industrial, 5%);

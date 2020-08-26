@@ -22,7 +22,7 @@
 @leisure-green: darken(@park, 60%);
 @protected-area: #000f00;
 @aboriginal: #5f4623;
-@religious-icon: #0e0d0d;
+@religious-icon: #2c2a2a;
 
 @landcover-font-size: 10;
 @landcover-wrap-width-size: 30; // 3 em
