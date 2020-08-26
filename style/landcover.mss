@@ -115,7 +115,7 @@
 
   [feature = 'landuse_quarry'][zoom >= 10] {
     polygon-fill: @quarry;
-    polygon-pattern-file: url('symbols/quarry.svg');
+    //polygon-pattern-file: url('symbols/quarry.svg');
     [zoom >= 13] {
       line-width: 0.5;
       line-color: darken(@quarry, 10%);
@@ -268,7 +268,7 @@
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
     [zoom >= 16] {
-      polygon-pattern-file: url('symbols/dog_park.png');
+      //polygon-pattern-file: url('symbols/dog_park.png');
       polygon-pattern-alignment: global;
       [way_pixels >= 4]  { polygon-pattern-gamma: 0.75; }
       [way_pixels >= 64] { polygon-pattern-gamma: 0.3;  }
@@ -488,7 +488,7 @@
     [way_pixels >= 4]  { polygon-gamma: 0.75; }
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
     [zoom >= 13] {
-      polygon-pattern-file: url('symbols/rock_overlay.png');
+      //polygon-pattern-file: url('symbols/rock_overlay.png');
       [way_pixels >= 4]  { polygon-pattern-gamma: 0.75; }
       [way_pixels >= 64] { polygon-pattern-gamma: 0.3;  }
     }
@@ -501,7 +501,7 @@
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
       [zoom >= 13] {
-        polygon-pattern-file: url('symbols/scree_overlay.png');
+        //polygon-pattern-file: url('symbols/scree_overlay.png');
         [way_pixels >= 4]  { polygon-pattern-gamma: 0.75; }
         [way_pixels >= 64] { polygon-pattern-gamma: 0.3;  }
       }
@@ -730,6 +730,7 @@
     }
   }
 
+  /*
   [int_wetland != null][zoom >= 10] {
     polygon-pattern-file: url('symbols/wetland.png');
     polygon-pattern-alignment: global;
@@ -789,6 +790,7 @@
       polygon-pattern-alignment: global;
     }
   }
+  */
 
   //Also landuse = forest, converted in the SQL
   [natural = 'wood'][zoom >= 13]::wood {
@@ -806,7 +808,7 @@
   [landuse = 'military'][zoom >= 8][way_pixels > 900],
   [landuse = 'military'][zoom >= 13],
   [military = 'danger_area'][zoom >= 9] {
-    polygon-pattern-file: url('symbols/military_red_hatch.png');
+    //polygon-pattern-file: url('symbols/military_red_hatch.png');
     polygon-pattern-alignment: global;
     line-color: @military;
     line-opacity: 0.24;
@@ -814,7 +816,7 @@
     line-offset: -0.5;
     [zoom >= 15] {
       [military = 'danger_area'][zoom >= 9] {
-        polygon-pattern-file: url('symbols/danger_red_hatch.png');
+        //polygon-pattern-file: url('symbols/danger_red_hatch.png');
         line-opacity: 0.2;
       }
       line-width: 2;
@@ -824,6 +826,7 @@
 }
 
 #cliffs {
+  /*
   [natural = 'cliff'][zoom >= 13] {
     line-pattern-file: url('symbols/cliff.svg');
     [zoom >= 15] {
@@ -845,6 +848,7 @@
   [man_made = 'embankment'][zoom >= 15]::man_made {
     line-pattern-file: url('symbols/embankment.svg');
   }
+  */
 }
 
 #barriers {
