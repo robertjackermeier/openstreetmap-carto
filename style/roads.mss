@@ -2314,7 +2314,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   }
 }
 
-//TODO: remove this too?
+/*
 #turning-circle-casing {
   [int_tc_type = 'tertiary'][zoom >= 15] {
     marker-fill: @tertiary-casing;
@@ -2569,6 +2569,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     marker-line-width: 0;
   }
 }
+*/
 
 #highway-area-casing {
   [feature = 'highway_service'] {
