@@ -198,6 +198,7 @@
 
 }
 
+/*
 #water-lines-text {
   [lock = 'yes'][zoom >= 17] {
       text-name: "[lock_name]";
@@ -324,3 +325,4 @@
     }
   }
 }
+*/
