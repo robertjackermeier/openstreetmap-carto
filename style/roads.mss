@@ -11,7 +11,7 @@
 @footway-fill-noaccess: #5e5d5d;
 @steps-fill: @footway-fill;
 @steps-fill-noaccess: #bbbbbb;
-@cycleway-fill: blue;
+@cycleway-fill: rgba(0, 0, 255, 0);
 @cycleway-fill-noaccess: #9999ff;
 @bridleway-fill: green;
 @bridleway-fill-noaccess: #aaddaa;
