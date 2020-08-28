@@ -1,4 +1,4 @@
-@ferry-route: #66f;
+@ferry-route: rgb(58, 58, 160);
 @ferry-route-text: @ferry-route;
 
 #ferry-routes {
@@ -17,6 +17,7 @@
   }
 }
 
+/*
 #ferry-routes-text {
   [zoom >= 13] {
     text-name: "[name]";
@@ -28,3 +29,4 @@
     text-dy: -8;
   }
 }
+*/
