@@ -1,4 +1,4 @@
-@power-line-color: #888;
+@power-line-color: rgb(92, 91, 91);
 
 #power-line {
   [zoom >= 14] {

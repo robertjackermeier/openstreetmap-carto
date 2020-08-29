@@ -44,18 +44,18 @@
 @cemetery: #0b130c; // also grave_yard
 @construction: #1f1f0b; // also brownfield
 @heath: #2e2d0f;
-@mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
+@mud: rgba(148, 116, 87, 0.3); // produces #e6dcd1 over @land
 @place_of_worship: #363635; // also landuse_religious
 @place_of_worship_outline: darken(@place_of_worship, 30%);
 @leisure: lighten(@park, 5%);
 @power: darken(@industrial, 5%);
 @power-line: darken(@industrial-line, 5%);
-@sand: #574c2c;
+@sand: #4b4122;
 @societal_amenities: #181606;   // Lch(99,13,109)
 @tourism: #660033;
 @quarry: #242323;
 @military: rgb(70, 20, 20);
-@beach: #c7b261;
+@beach: #4e4608;
 @wastewater_plant: @industrial;
 @wastewater_plant-line: @industrial-line;
 @water_works: @industrial;

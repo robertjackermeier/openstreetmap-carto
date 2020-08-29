@@ -5,18 +5,18 @@
 @service-fill: @residential-fill;
 @living-street-fill: #242424;
 @pedestrian-fill: #27272b;
-@raceway-fill: pink;
+@raceway-fill: rgb(95, 57, 63);
 @road-fill: #16181a;
 @footway-fill: rgb(31, 13, 2);
-@footway-fill-noaccess: #5e5d5d;
+@footway-fill-noaccess: #4d4d4d;
 @steps-fill: @footway-fill;
-@steps-fill-noaccess: #bbbbbb;
+@steps-fill-noaccess: #464646;
 @cycleway-fill: rgba(0, 0, 255, 0);
-@cycleway-fill-noaccess: #9999ff;
+@cycleway-fill-noaccess: #4d4d8d;
 @bridleway-fill: green;
-@bridleway-fill-noaccess: #aaddaa;
-@track-fill: #996600;
-@track-fill-noaccess: #e2c5bb;
+@bridleway-fill-noaccess: #4b6b4b;
+@track-fill: #352300;
+@track-fill-noaccess: #725f5a;
 @aeroway-fill: rgb(58, 58, 68);
 @runway-fill: @aeroway-fill;
 @taxiway-fill: @aeroway-fill;
@@ -1068,7 +1068,7 @@
       #bridges {
         [zoom >= 14] {
           line-width: 4;
-          line-color:rgb(51, 51, 51);
+          line-color: rgb(51, 51, 51);
           line-join: round;
         }
       }
@@ -1192,7 +1192,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         line-width: 2;
         b/line-width: 2;
         b/line-dasharray: 4,2;
-        b/line-color: rgb(105, 105, 105);
+        b/line-color: rgb(65, 65, 65);
         [zoom >= 13] {
           line-width: 4;
           b/line-width: 3.5;
@@ -1221,7 +1221,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       [construction = 'residential'][zoom >= 14],
       [construction = 'unclassified'][zoom >= 14] {
         line-color: @minor-construction;
-        b/line-color: rgb(105, 105, 105);
+        b/line-color: rgb(65, 65, 65);
         line-width: @residential-width-z14;
         b/line-width: @residential-width-z14 - 2 * @casing-width-z13;
         b/line-dasharray: 6,4;
@@ -1284,7 +1284,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         [zoom >= 15][service = 'INT-normal'],
         [zoom >= 17][service = 'INT-minor'] {
           line-color: @minor-construction;
-          b/line-color: rgb(105, 105, 105);
+          b/line-color: rgb(65, 65, 65);
           b/line-dasharray: 6,4;
           [service = 'INT-normal'] {
             line-width: @service-width-z14;
@@ -1346,7 +1346,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       [construction = 'path'][zoom >= 15],
       [construction = 'track'][zoom >= 15],
       [construction = 'steps'][zoom >= 15] {
-        line-color: rgb(105, 105, 105);
+        line-color: rgb(53, 53, 53);
         line-width: 3;
         line-opacity: 0.4;
         b/line-width: 1.2;
@@ -1801,7 +1801,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         line-color: rgb(36, 36, 36);
         line-cap: round;
         b/line-width: 4;
-        b/line-color: #bbbbbb;
+        b/line-color: #383838;
         b/line-cap: round;
         b/line-join: round;
       }
@@ -2161,9 +2161,9 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [feature = 'railway_miniature'] {
       [zoom >= 15] {
         line/line-width: 1.2;
-        line/line-color: #999;
+        line/line-color: #383838; 
         dashes/line-width: 3;
-        dashes/line-color: #999;
+        dashes/line-color: #383838;
         dashes/line-dasharray: 1,10;
       }
     }
@@ -2171,7 +2171,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [feature = 'railway_tram'],
     [feature = 'railway_tram-service'][zoom >= 15] {
       [zoom >= 12] {
-        line-color: #414141;
+        line-color: #242424;
         line-width: 0.75;
         [zoom >= 14] {
           line-width: 1;
@@ -2207,7 +2207,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [feature = 'railway_subway'] {
       [zoom >= 12] {
         line-width: 2;
-        line-color: rgb(53, 53, 53);
+        line-color: rgb(43, 43, 43);
         #tunnels {
           line-dasharray: 5,3;
         }
@@ -2229,7 +2229,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
           dark/line-width: 3;
           dark/line-color: #383838;
           light/line-width: 1;
-          light/line-color: rgb(61, 61, 61);
+          light/line-color: rgb(51, 51, 51);
           light/line-dasharray: 0,1,8,1;
           light/line-join: round;
         }
@@ -2245,7 +2245,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
           dark/line-width: 2;
           dark/line-color: #434343;
           light/line-width: 0.8;
-          light/line-color: rgb(51, 51, 51);
+          light/line-color: rgb(43, 43, 43);
           light/line-dasharray: 0,1,8,1;
           light/line-join: round;
         }
@@ -2255,12 +2255,12 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [feature = 'railway_monorail'] {
       [zoom >= 14] {
         background/line-width: 4;
-        background/line-color: #494949;
+        background/line-color: #383838;
         background/line-opacity: 0.4;
         background/line-cap: round;
         background/line-join: round;
         line/line-width: 3;
-        line/line-color: #515151;
+        line/line-color: #424242;
         line/line-dasharray: 2,3;
         line/line-cap: round;
         line/line-join: round;
@@ -2285,7 +2285,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 
     [feature = 'railway_disused'] {
       [zoom >= 15] {
-        line-color: rgb(53, 52, 52);
+        line-color: rgb(44, 44, 44);
         line-width: 2;
         line-dasharray: 2,4;
         line-join: round;
@@ -2308,7 +2308,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [feature = 'railway_turntable'] {
       [zoom >= 16] {
         line-width: 1.5;
-        line-color: rgb(54, 54, 54);
+        line-color: rgb(44, 44, 44);
       }
     }
   }
@@ -2574,7 +2574,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 #highway-area-casing {
   [feature = 'highway_service'] {
     [zoom >= 14] {
-      line-color: rgb(59, 59, 59);
+      line-color: rgb(53, 53, 53);
       line-width: 1;
     }
   }
@@ -2841,12 +2841,12 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 #guideways {
   [zoom >= 11][zoom < 13] {
     line-width: 0.6;
-    line-color: #6699ff;
+    line-color: #324d83;
     [zoom >= 12] { line-width: 1; }
   }
   [zoom >= 13] {
     line-width: 3;
-    line-color: #6699ff;
+    line-color: #324d83;
     line-join: round;
     b/line-width: 1;
     b/line-color: rgb(105, 105, 105);
