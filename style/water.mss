@@ -28,9 +28,11 @@
       [way_pixels >= 64] { polygon-gamma: 0.6; }
     }
     [int_intermittent = 'yes'] {
+      /*
       polygon-pattern-file: url('symbols/intermittent_water.png');
       [way_pixels >= 4] { polygon-pattern-gamma: 0.75; }
       [way_pixels >= 64] { polygon-pattern-gamma: 0.6; }
+      */
     }
   }
 }
@@ -43,7 +45,7 @@
       [int_intermittent != 'yes'][zoom >= 14],
       [zoom >= 15] {
         line-width: 2.5;
-        line-color: rgb(33, 49, 75);
+        line-color: rgb(19, 29, 46);
         [waterway = 'stream'][zoom >= 15] {
           line-width: 3.5;
         }

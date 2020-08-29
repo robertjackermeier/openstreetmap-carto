@@ -5,19 +5,19 @@
 @service-fill: @residential-fill;
 @living-street-fill: #242424;
 @pedestrian-fill: #27272b;
-@raceway-fill: rgb(95, 57, 63);
+@raceway-fill: rgb(63, 34, 38);
 @road-fill: #16181a;
 @footway-fill: rgb(31, 13, 2);
-@footway-fill-noaccess: #4d4d4d;
+@footway-fill-noaccess: #2c2c2c;
 @steps-fill: @footway-fill;
-@steps-fill-noaccess: #464646;
+@steps-fill-noaccess: #313131;
 @cycleway-fill: rgba(0, 0, 255, 0);
-@cycleway-fill-noaccess: #4d4d8d;
-@bridleway-fill: green;
-@bridleway-fill-noaccess: #4b6b4b;
-@track-fill: #352300;
-@track-fill-noaccess: #725f5a;
-@aeroway-fill: rgb(58, 58, 68);
+@cycleway-fill-noaccess: #222244;
+@bridleway-fill: rgb(0, 27, 0);
+@bridleway-fill-noaccess: #283a28;
+@track-fill: #1b1200;
+@track-fill-noaccess: #332826;
+@aeroway-fill: rgb(52, 52, 61);
 @runway-fill: @aeroway-fill;
 @taxiway-fill: @aeroway-fill;
 @helipad-fill: @aeroway-fill;
@@ -45,9 +45,9 @@
 @minor-construction: rgb(56, 53, 53);
 @service-construction: rgb(59, 58, 58);
 
-@destination-marking: #7389a0;
-@private-marking: #994f4f;
-@private-marking-for-red: #a14343;
+@destination-marking: #3b4b5c;
+@private-marking: #3a1616;
+@private-marking-for-red: #471515;
 
 @tunnel-casing: rgb(32, 32, 32);
 @bridge-casing: black;

@@ -1,11 +1,11 @@
 // --- Parks, woods, other green things ---
 
 @grass: #131b0c;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
-@scrub: #1c2509;        // Lch(84,24,122)
+@scrub: #0e1304;        // Lch(84,24,122)
 @forest: #0b1806;       // Lch(80,30,135)
 @forest-text: #193012;  // Lch(40,30,135)
 @park: #010f05;         // Lch(94,30,145)
-@allotments: #172013;   // Lch(87,20,135)
+@allotments: #0f140c;   // Lch(87,20,135)
 @orchard: #0d1609; // also vineyard, plant_nursery
 @hedge: @forest;       // Lch(80,30,135)
 
@@ -47,15 +47,15 @@
 @mud: rgba(148, 116, 87, 0.3); // produces #e6dcd1 over @land
 @place_of_worship: #363635; // also landuse_religious
 @place_of_worship_outline: darken(@place_of_worship, 30%);
-@leisure: lighten(@park, 5%);
+@leisure: lighten(@park, 2%);
 @power: darken(@industrial, 5%);
 @power-line: darken(@industrial-line, 5%);
-@sand: #4b4122;
+@sand: #332c17;
 @societal_amenities: #181606;   // Lch(99,13,109)
 @tourism: #660033;
 @quarry: #242323;
 @military: rgb(70, 20, 20);
-@beach: #4e4608;
+@beach: #332d02;
 @wastewater_plant: @industrial;
 @wastewater_plant-line: @industrial-line;
 @water_works: @industrial;
@@ -63,7 +63,7 @@
 
 // --- Sports ---
 
-@pitch: #1e2723;           // Lch(85,22,168) also track
+@pitch: #1a221e;           // Lch(85,22,168) also track
 @track: @pitch;
 @stadium: @leisure; // also sports_centre
 @golf_course: #121812;
@@ -131,10 +131,12 @@
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
     [zoom >= 13] {
+      /*
       polygon-pattern-file: url('symbols/vineyard.png');
       polygon-pattern-alignment: global;
       [way_pixels >= 4]  { polygon-pattern-gamma: 0.75; }
       [way_pixels >= 64] { polygon-pattern-gamma: 0.3;  }
+      */
     }
   }
 
@@ -145,10 +147,12 @@
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
     [zoom >= 13] {
+      /*
       polygon-pattern-file: url('symbols/orchard.png');
       polygon-pattern-alignment: global;
       [way_pixels >= 4]  { polygon-pattern-gamma: 0.75; }
       [way_pixels >= 64] { polygon-pattern-gamma: 0.3;  }
+      */
     }
   }
 
@@ -215,9 +219,11 @@
   }
 
   [feature = 'amenity_prison'][zoom >= 10][way_pixels > 75] {
+    /*
     polygon-pattern-file: url('symbols/grey_vertical_hatch.png');
     polygon-pattern-alignment: global;
-    line-color: #888;
+    */
+    line-color: rgb(75, 74, 74);
     line-width: 3;
     line-opacity: 0.329;
   }
@@ -291,10 +297,12 @@
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
     [zoom >= 13] {
+      /*
       polygon-pattern-file: url('symbols/allotments.png');
       polygon-pattern-alignment: global;
       [way_pixels >= 4]  { polygon-pattern-gamma: 0.75; }
       [way_pixels >= 64] { polygon-pattern-gamma: 0.3;  }
+      */
     }
     [zoom >= 16] {
       line-width: 0.5;
@@ -937,6 +945,7 @@
   }
 }
 
+/*
 #text-line {
   [feature = 'natural_arete'][zoom >= 15],
   [feature = 'natural_cliff'][zoom >= 15],
@@ -945,7 +954,7 @@
     text-name: "[name]";
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
-    text-fill: rgb(70, 70, 70);
+    text-fill: rgb(44, 44, 44);
     text-size: 10;
     text-face-name: @book-fonts;
     text-placement: line;
@@ -954,3 +963,4 @@
     text-spacing: 400;
   }
 }
+*/
