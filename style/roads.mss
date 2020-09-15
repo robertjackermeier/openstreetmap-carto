@@ -2314,6 +2314,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   }
 }
 
+/*
 #turning-circle-casing {
   [int_tc_type = 'tertiary'][zoom >= 15] {
     marker-fill: @tertiary-casing;
@@ -2568,6 +2569,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     marker-line-width: 0;
   }
 }
+*/
 
 #highway-area-casing {
   [feature = 'highway_service'] {
@@ -2635,6 +2637,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   }
 }
 
+/*
 #junctions {
   [highway = 'motorway_junction'] {
     [zoom >= 11] {
@@ -2677,8 +2680,8 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       [zoom >= 17] {
         text-size: 11;
         text-line-spacing: -1.65; // -0.15 em
-        /* Offset name on traffic_signals on zoomlevels where they are displayed
-        in order not to hide the text */
+        // Offset name on traffic_signals on zoomlevels where they are displayed
+        //in order not to hide the text
         [highway = 'traffic_signals'] {
           text-dy: 9;
         }
@@ -2731,6 +2734,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
   }
 }
+*/
 
 #tunnels::fill,
 #roads-fill::fill,
@@ -2900,6 +2904,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
   }
 }
 
+/*
 #roads-text-ref-low-zoom[zoom < 13] {
   [highway = 'motorway'][zoom >= 10],
   [highway = 'trunk'][zoom >= 11],
@@ -3037,7 +3042,9 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
   }
 }
+*/
 
+/*
 #roads-text-ref-minor {
   [highway = 'unclassified'],
   [highway = 'residential'] {
@@ -3477,7 +3484,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 }
 
 #railways-text-name {
-  /* Mostly started from z17. */
+  //Mostly started from z17.
   [railway = 'rail'],
   [railway = 'subway'],
   [railway = 'narrow_gauge'],
@@ -3505,8 +3512,8 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
   }
   [railway = 'rail'] {
-    /* Render highspeed rails from z11,
-       other main routes at z14. */
+    // Render highspeed rails from z11,
+    // other main routes at z14.
     [highspeed = 'yes'] {
       [zoom >= 11] {
         text-name: "[name]";
@@ -3561,8 +3568,10 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       }
     }
   }
+  */
   /* Other minor railway styles. For service rails, see:
      https://github.com/gravitystorm/openstreetmap-carto/pull/2687 */
+  /*
   [railway = 'preserved'],
   [railway = 'miniature'],
   [railway = 'disused'],
@@ -3586,3 +3595,4 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
   }
 }
+*/

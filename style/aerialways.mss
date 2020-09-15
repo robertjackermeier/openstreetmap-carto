@@ -128,6 +128,7 @@
   }
 }
 
+/*
 #text-line {
   [feature = 'aerialway_cable_car'],
   [feature = 'aerialway_gondola'],
@@ -166,3 +167,4 @@
     }
   }
 }
+*/

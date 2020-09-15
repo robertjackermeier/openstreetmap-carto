@@ -32,6 +32,7 @@
   }
 }
 
+/*
 #power-towers {
   [power = 'tower'] {
     [zoom >= 14] {
@@ -52,3 +53,4 @@
     marker-width: 3;
   }
 }
+*/

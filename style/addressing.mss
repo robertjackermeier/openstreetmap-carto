@@ -2,6 +2,7 @@
 
 @address-color: #666;
 
+/*
 #interpolation {
   [zoom >= 17] {
     line-color: @address-color;
@@ -57,10 +58,12 @@
     }
   }
 }
+*/
 
 /* Building names (rendered differently from addresses because they are
 no official postal addresses) */
 
+/*
 #building-text {
   [zoom >= 14][way_pixels > 3000],
   [zoom >= 17] {
@@ -74,3 +77,4 @@ no official postal addresses) */
     text-line-spacing: -1.65; // -0.15 em
   }
 }
+*/

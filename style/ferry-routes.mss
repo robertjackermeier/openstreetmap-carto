@@ -17,6 +17,7 @@
   }
 }
 
+/*
 #ferry-routes-text {
   [zoom >= 13] {
     text-name: "[name]";
@@ -28,3 +29,4 @@
     text-dy: -8;
   }
 }
+*/

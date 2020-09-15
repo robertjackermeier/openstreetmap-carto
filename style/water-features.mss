@@ -116,6 +116,7 @@
   }
 }
 
+/*
 #text-point,
 #text-line {
   [feature = 'waterway_dam'],
@@ -158,3 +159,4 @@
     }
   }
 }
+*/

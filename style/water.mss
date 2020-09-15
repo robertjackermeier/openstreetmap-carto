@@ -28,9 +28,11 @@
       [way_pixels >= 64] { polygon-gamma: 0.6; }
     }
     [int_intermittent = 'yes'] {
+      /*
       polygon-pattern-file: url('symbols/intermittent_water.png');
       [way_pixels >= 4] { polygon-pattern-gamma: 0.75; }
       [way_pixels >= 64] { polygon-pattern-gamma: 0.6; }
+      */
     }
   }
 }
@@ -198,6 +200,7 @@
 
 }
 
+/*
 #water-lines-text {
   [lock = 'yes'][zoom >= 17] {
       text-name: "[lock_name]";
@@ -324,3 +327,4 @@
     }
   }
 }
+*/
