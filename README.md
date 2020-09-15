@@ -1,4 +1,4 @@
-This fork contains a night mode version of the original OpenStreetmap Carto Style. This is just a small project for a certain region and therefore not suited as a general purpose night mode style.
+This branch contains a the original light version of the original OpenStreetmap Carto Style without labels and most icons.
 
 # Original Readme:
 
